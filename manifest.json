@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Upwork Job Highlighter",
+  "version": "1.0",
+  "description": "Job titles green, India locations red on Upwork",
+  "permissions": ["activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["https://www.upwork.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_end"
+    }
+  ]
+}
